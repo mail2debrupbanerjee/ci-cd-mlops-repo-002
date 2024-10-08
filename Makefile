@@ -31,10 +31,9 @@ hf-login:
 	huggingface-cli login --token $(HF) --add-to-git-credential
 
 push-hub: 
-	huggingface-cli upload mail2debrupbanerjee/ci-cd-mlops-repo-002-n ./App --repo-type=space --commit-message="Sync App files"
-	huggingface-cli upload mail2debrupbanerjee/ci-cd-mlops-repo-002-n ./Model /Model --repo-type=space --commit-message="Sync Model"
-	huggingface-cli upload mail2debrupbanerjee/ci-cd-mlops-repo-002-n ./Results /Metrics --repo-type=space --commit-message="Sync Model"
-	huggingface-cli upload mail2debrupbanerjee/ci-cd-mlops-repo-002-n ./Results /Metrics --repo-type=space --commit-message="Sync Model"
+	huggingface-cli upload mail2debrupbanerjee/Drug-Classification ./App --repo-type=space --commit-message="Sync App files"
+	huggingface-cli upload mail2debrupbanerjee/Drug-Classification ./Model /Model --repo-type=space --commit-message="Sync Model"
+	huggingface-cli upload mail2debrupbanerjee/Drug-Classification ./Results /Metrics --repo-type=space --commit-message="Sync Model"
 
 deploy: hf-login push-hub
 
