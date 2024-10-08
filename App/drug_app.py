@@ -46,8 +46,8 @@ examples = [
 ]
 
 
-title = "Drug Classification"
-description = "Enter the details to correctly identify Drug type?"
+title = "Drug Recommendation"
+description = "Correctly identify Drug type!"
 article=""
 
 
